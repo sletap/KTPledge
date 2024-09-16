@@ -58,6 +58,22 @@ class Menu extends Component {
                                 <Button 
                                     buttonStyle={styles.loginButton}
                                     textStyle={styles.buttonText}
+                                    onPress={() => navigate('ActivesScreen', {
+                                    data: this.props.navigation.state.params.data
+                                    })}
+                                >
+                                    ACTIVES
+                                </Button>
+                            </View>
+                        </CardSection>
+                    </Card>
+
+                    <Card>
+                        <CardSection>
+                            <View style={styles.buttonContainer}>
+                                <Button 
+                                    buttonStyle={styles.loginButton}
+                                    textStyle={styles.buttonText}
                                     onPress={() => navigate('LeadersScreen', {
                                     data: this.props.navigation.state.params.data
                                     })}

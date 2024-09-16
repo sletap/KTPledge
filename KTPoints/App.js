@@ -14,6 +14,8 @@ import Main from './src/components/Main.js'
 import Menu from './src/components/Menu.js'
 import AboutMe from './src/components/Aboutme.js'
 import Leaders from './src/components/Leaders'
+import ActivesList from './src/components/ActivesList'
+import Profile from './src/components/Profile'
 import { createStackNavigator,createAppContainer, DrawerNavigator } from 'react-navigation';
 import * as firebase from "firebase";
 
@@ -34,6 +36,8 @@ const Navigator = createStackNavigator({
   MenuScreen: {screen: Menu},
   ProfileScreen: {screen: AboutMe},
   LeadersScreen: {screen: Leaders},
+  ActivesScreen: {screen: ActivesList},
+  DiffProfileScreen: {screen: Profile},
  },
  {
   initialRouteName: 'LoginScreen',
